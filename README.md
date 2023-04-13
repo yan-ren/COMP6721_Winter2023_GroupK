@@ -31,14 +31,14 @@ Running on Google Colab without local computer setup, which requires a Google Co
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-> **Note**
-> Run the following command to execute the each experiments:
+> **Note**:
+> Run the following command to execute the each experiment:
 
 #### AlexNet
 
 #### ResNet
 1. Download the dataset from [here](https://drive.google.com/drive/folders/1x8phqxuxbmLUm50_3UdpfEYvrkIVEjZT?usp=share_link)
-2. Depend on run with local computer or Colab, change the dataset path in this code section of each ResNet .ipynb files
+2. Depend on running with local computer or Google Colab, change the dataset path in this code section inside each ResNet .ipynb files
 ```python
 # Other constants
 model_save_name = 'resnet_3_categories_model.pth'
