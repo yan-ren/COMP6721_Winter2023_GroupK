@@ -54,6 +54,23 @@ evaluation_path = f'{ROOT_PATH}/test'
 3. Run Jupyter Notebook, and see the results
 
 #### Transfer Learning
+1. Download the dataset from [here](https://drive.google.com/drive/folders/1x8phqxuxbmLUm50_3UdpfEYvrkIVEjZT?usp=share_link)
+2. Depend on running with local computer or Google Colab, change the dataset paths (train_data_path, val_data_path, and test_data_path) in this code section inside each transferlearning .ipynb files
+```python
+ROOT_PATH = 'drive/MyDrive/'
+train_data_path = f'{ROOT_PATH}/train'
+val_data_path = f'{ROOT_PATH}/val'
+test_data_path = f'{ROOT_PATH}/test'
+```
+3. Change the hardcoded values with paths in these lines
+```python
+torch.save(model.state_dict(), "drive/MyDrive/tl2.pth")
+
+with open('drive/MyDrive/tl2_metrics', 'wb') as f:
+
+model2.load_state_dict(torch.load("drive/MyDrive/tl2"))
+```
+4. Run Jupyter Notebook, and see the results
 
 #### VGG11
 
