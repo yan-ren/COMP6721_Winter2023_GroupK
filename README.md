@@ -35,7 +35,7 @@ Running on Google Colab without local computer setup, which requires a Google Co
 > Run the following command to execute the each experiment:
 
 #### AlexNet
-
+1. Download the dataset from [here](https://drive.google.com/file/d/1XIygsaV67Lhu5jXemZUyXucTHa455O01/view?usp=share_link)
 #### ResNet
 1. Download the dataset from [here](https://drive.google.com/drive/folders/1x8phqxuxbmLUm50_3UdpfEYvrkIVEjZT?usp=share_link)
 2. Depend on running with local computer or Google Colab, change the dataset path in this code section inside each ResNet .ipynb files
@@ -73,7 +73,7 @@ model2.load_state_dict(torch.load("drive/MyDrive/tl2"))
 4. Run Jupyter Notebook, and see the results
 
 #### VGG11
-
+1. Download the dataset from [here](https://drive.google.com/file/d/1XIygsaV67Lhu5jXemZUyXucTHa455O01/view?usp=share_link)
 <!-- LICENSE -->
 ## License
 
