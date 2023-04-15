@@ -15,7 +15,7 @@ This project is COMP 6721 – Applied Artificial Intelligence, Winter 2023 cours
 * resnet: Jupyter Notebook files for ResNet model
 * transfer: Jupyter Notebook files for Transfer Learning model
 * vgg11: Jupyter Notebook files for VGG11 model
-* archived: Old code containing AlexNet,VGG11 and transfer learning code. This code is unoptimized and uses SGD optimizer instead of SGD
+* archived: Old code containing AlexNet,VGG11 and transfer learning code. This code is unoptimized and uses SGD optimizer instead of ADAM
 <!-- GETTING STARTED -->
 ## Getting Started
 ### Prerequisites
