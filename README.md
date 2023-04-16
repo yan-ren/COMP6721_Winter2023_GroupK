@@ -70,7 +70,7 @@ epochs=15
 criterion=nn.CrossEntropyLoss()
 ```
 6. Run Jupyter Notebook, and see the results. The subheadings and comments in the respective AlexNet notebooks explain each cell and functioning.
-#### ResNet
+#### ResNet18
 1. Download the dataset from [here](https://drive.google.com/drive/folders/1x8phqxuxbmLUm50_3UdpfEYvrkIVEjZT?usp=share_link)
 2. Depend on running with local computer or Google Colab, change the dataset path in this code section inside each ResNet .ipynb files
 ```python
@@ -85,7 +85,22 @@ training_path = f'{ROOT_PATH}/train'
 validation_path = f'{ROOT_PATH}/val'
 evaluation_path = f'{ROOT_PATH}/test'
 ```
-3. Run Jupyter Notebook, and see the results
+3. Change following constants in code for hyperparameters
+```python
+# Model training constants
+batch_size = 32
+num_epochs = 15
+
+# Loss function & optimizer constants
+lr = 0.0001
+
+# Image constants
+image_size = 256
+mean = [0.554, 0.450, 0.343]
+std = [0.231, 0.241, 0.241]
+num_classes = 3
+``` 
+4. Run Jupyter Notebook, and see the results
 
 #### Transfer Learning
 1. Download the dataset from [here](https://drive.google.com/drive/folders/1x8phqxuxbmLUm50_3UdpfEYvrkIVEjZT?usp=share_link)
