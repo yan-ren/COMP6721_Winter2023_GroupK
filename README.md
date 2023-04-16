@@ -58,18 +58,18 @@ saveModelPath="/kaggle/input/"
 ```
 5. Change the following variables under the "HyperParameter tuning" subsection in the notebook(only if tuning is required,otherwise skip this step)
 ```python
-#change input dimensionof the image fed to the CNN
+#change input dimensions of the image fed to the CNN
 inputDimension=(256,256)
-#different batch sizes
+#Setting different batch sizes
 batch_sizes=[32]
-#different learning rates
+#Setting different learning rates
 learning_rates=[0.0001,0.0005,0.001,0.01]
 #Setting the number of epochs
 epochs=15
 #setting the loss function
 criterion=nn.CrossEntropyLoss()
 ```
-6. Run Jupyter Notebook, and see the results. The subheadings and comments in the respective AlexNet notebooks explain each call and functioning.
+6. Run Jupyter Notebook, and see the results. The subheadings and comments in the respective AlexNet notebooks explain each cell and functioning.
 #### ResNet
 1. Download the dataset from [here](https://drive.google.com/drive/folders/1x8phqxuxbmLUm50_3UdpfEYvrkIVEjZT?usp=share_link)
 2. Depend on running with local computer or Google Colab, change the dataset path in this code section inside each ResNet .ipynb files
@@ -108,6 +108,33 @@ model2.load_state_dict(torch.load("drive/MyDrive/tl2"))
 
 #### VGG11
 1. Download the dataset from [here](https://drive.google.com/file/d/1XIygsaV67Lhu5jXemZUyXucTHa455O01/view?usp=share_link)
+2. There are three files for VGG11 as follows COMP6721_VGG11_Dataset10.ipynb(for Fast Food Dataset),
+COMP6721_VGG11_Dataset30.ipynb(Food-101 Dataset),COMP6721_VGG11_Dataset3.ipynb(for Food-11 dataset).Depending upon the need
+download the desired file(s).
+3. Load the file using a editor(Jupyter Notebook,Google Colab, Kaggle Notebooks, etc.) compatible with .ipynb extension. 
+4. Change the following variables under the "Dataset images before and after Preprocessing" subsection in the notebook:-
+```python
+# give path of the input dataset folder
+path="/kaggle/input/dataset-10n/dataset-10N"
+# give path to save the plot results(Example training vs epoch,loss vs steps,etc)
+saveFilePath="/kaggle/input/hyperparameters.pkl"
+# give path to save the trained model
+saveModelPath="/kaggle/input/"
+```
+5. Change the following variables under the "HyperParameter tuning" subsection in the notebook(only if tuning is required,otherwise skip this step)
+```python
+#change input dimensions of the image fed to the CNN
+inputDimension=(256,256)
+#Setting different batch sizes
+batch_sizes=[32]
+#Setting different learning rates
+learning_rates=[0.0001,0.0005,0.001,0.01]
+#Setting the number of epochs
+epochs=15
+#setting the loss function
+criterion=nn.CrossEntropyLoss()
+```
+6. Run Jupyter Notebook, and see the results. The subheadings and comments in the respective VGG11 notebooks explain each cell and functioning.
 <!-- LICENSE -->
 ## License
 
